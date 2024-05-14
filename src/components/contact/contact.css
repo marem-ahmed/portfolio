@@ -1,0 +1,90 @@
+.ContactUs .title{
+    color: var(--title-color);
+
+}
+.ContactUs .title h2{
+font-size: 2rem;
+}
+.ContactUs .title .icon-envelope-o{
+    color: var(--subtitle-color);
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+
+}
+.ContactUs p{
+    color: var(--subtitle-color);
+    margin-top: 2rem;
+}
+.ContactUs form{
+  color: var(--subtitle-color);
+  margin-top: 2rem;
+}
+.ContactUs form div{
+    margin-bottom: 1rem;
+}
+.ContactUs form #email,.ContactUs form #message{
+    all: unset;
+    background-color: rgba(63,63, 70, 0.15);
+    border: 1px solid rgb(63, 63, 70);
+    width: 17rem;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.ContactUs form #email:hover,
+.ContactUs form #message:hover{
+border: 1px solid rgba(93,188,252,0.4);
+}
+.ContactUs form #email:focus,
+.ContactUs form #message:focus{
+border: 1px solid rgba(93,188,252,0.4);
+}
+.ContactUs form #message{
+    resize: vertical;
+}
+.ContactUs form button{
+   color: var(--title-color);
+background-color: var(--btn-bg);
+margin-bottom: 1rem;
+padding: 0.8rem 2.5rem;
+border-radius: 4px;
+transition: all 0.4s; 
+font-size: 17px;
+border: 1px solid rgba(93,188,252,0.3);
+margin-top: 1rem;
+
+
+}
+.ContactUs form button:hover{
+    transform: scale(1.05);
+    border: 1px solid rgba(93,188,252,0.5);
+
+}
+
+
+
+@media screen and (max-width:600px) {
+    .ContactUs p{
+        line-height: 1.7rem;
+    }
+    .ContactUs form {
+            width: 90%;
+    }
+    .ContactUs form div{
+        display: flex;
+        flex-direction: column;
+        align-items: start !important;
+        justify-content: center;
+    }
+  
+    .ContactUs form button{
+        margin: auto;
+        display: flex;
+    }
+    .ContactUs form #email,
+    .ContactUs form #message{
+        margin-top: 0.5rem;
+        width: 90%;
+    }
+}
