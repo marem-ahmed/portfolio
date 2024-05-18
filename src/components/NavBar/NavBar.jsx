@@ -1,9 +1,29 @@
-// @ts-nocheck
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import './navBar.css'
 export default function navBar() {
    const [showModel,setshowModel]= useState(false)
+   const [theme, setTheme] = useState(localStorage.getItem("currentTheme")??"dark");
+   const [iconTheme, setIconTheme] = useState("icon-sun");
+
+
+
+useEffect(()=>{
+  if (theme === "light") {
+    document.body.classList.add("light");
+    document.body.classList.remove("dark");
+    setIconTheme("icon-sun");
+   
+  }else{
+document.body.classList.add("dark");
+document.body.classList.remove("light");
+setIconTheme("icon-moon-o");
+  }
+  
+
+
+},[theme]);
+
+
   return (
     <header className=" flex">
       <button
@@ -12,31 +32,31 @@ export default function navBar() {
           setshowModel(true);
         }}
       >
-        <span className="icon-menu "></span>
+        <span className="icon-menu"></span>
       </button>
 
       <div />
       <nav>
         <ul className="flex ">
           <li>
-            <a href="">About</a>
+            <a href="../About/About.jsx">About</a>
           </li>
           <li>
-            <a href="">Articles</a>
+            <a href="../main/main.jsx">Projects</a>
           </li>
           <li>
-            <a href="">Projects</a>
-          </li>
-          <li>
-            <a href="">Speaking</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
+            <a href="../contact/contact.jsx">Contact</a>
           </li>
         </ul>
       </nav>
-      <button className="border-circle">
-        <span className="icon-sun"></span>
+      <button
+        className="border-circle"
+        onClick={() => {
+          localStorage.setItem('currentTheme',theme==="dark"?"light":"dark")
+          setTheme(localStorage.getItem("currentTheme"));
+        }}
+      >
+        <span className={iconTheme}></span>
       </button>
       {showModel && (
         <div className=" fixed">

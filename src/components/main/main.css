@@ -26,6 +26,7 @@
 }
 .main .start-side button{
 color: var(--title-color);
+color: var(--btn-color);
 background-color: var(--btn-bg);
 margin-bottom: 1rem;
 padding: 0.8rem 0.5rem; 

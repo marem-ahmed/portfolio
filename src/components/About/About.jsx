@@ -26,7 +26,7 @@ export default function hero() {
         </div>
       </div>
 
-      <div className="end-section "> nn</div>
+      <div className="end-section "> </div>
     </section>
   );
 }
