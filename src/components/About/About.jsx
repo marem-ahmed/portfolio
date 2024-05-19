@@ -1,8 +1,10 @@
 import React from 'react'
 import './About.css'
+import Lottie from "lottie-react";
+import progammeranimation from '../../../public/animations/programmer.json'
 export default function hero() {
   return (
-    <section className='flex '>
+    <section className="flex justify-content-between ">
       <div className="start-section ">
         <div className="avatar  ">
           <img
@@ -26,7 +28,13 @@ export default function hero() {
         </div>
       </div>
 
-      <div className="end-section "> </div>
+      <div className="end-section ">
+        <Lottie
+          animationData={progammeranimation}
+          style={{height:350}}
+          className="my-auto"
+        />
+      </div>
     </section>
   );
 }

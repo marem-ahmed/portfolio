@@ -42,6 +42,9 @@ setIconTheme("icon-moon-o");
             <a href="../About/About.jsx">About</a>
           </li>
           <li>
+            <a href="">Skills</a>
+          </li>
+          <li>
             <a href="../main/main.jsx">Projects</a>
           </li>
           <li>
@@ -52,7 +55,10 @@ setIconTheme("icon-moon-o");
       <button
         className="border-circle"
         onClick={() => {
-          localStorage.setItem('currentTheme',theme==="dark"?"light":"dark")
+          localStorage.setItem(
+            "currentTheme",
+            theme === "dark" ? "light" : "dark"
+          );
           setTheme(localStorage.getItem("currentTheme"));
         }}
       >
