@@ -61,7 +61,7 @@ export default function contact() {
         <Lottie
           style={{ height: 320 }}
           animationData={EmailAnimation}
-          className="my-auto"
+          className="my-auto animation"
         />
       </div>
     </section>

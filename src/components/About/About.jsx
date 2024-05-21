@@ -9,12 +9,12 @@ export default function hero() {
         <div className="avatar  ">
           <img
             src="../../../public/assets/mariamAhmed.png"
-            alt="Mariam Ahmed"
+            alt="Mariam"
           />
         </div>
         <span className="icon-verified"></span>
         <div className="text-about">
-          <h1>Front-End developer</h1>
+          <h1>Front- developer</h1>
           <p>
             I'm Mariam Ahmed, a Front-end developer, My collage is Computer
             <br />
@@ -31,7 +31,7 @@ export default function hero() {
       <div className="end-section ">
         <Lottie
           animationData={progammeranimation}
-          style={{height:350}}
+          style={{ height: 350 }}
           className="my-auto"
         />
       </div>

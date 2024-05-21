@@ -1,6 +1,7 @@
 // @ts-nocheck
 import React, { useState } from "react";
 import "./main.css";
+import { motion, AnimatePresence } from "framer-motion";
 export default function main() {
   const myProjects = [
     {
@@ -120,41 +121,50 @@ export default function main() {
       </div>
 
       <div className=" ms-2 end-side  ">
-        {arr.map((item) => {
-          return (
-            <div className="item text-center" key={item.imgpath}>
-              <div>
-                <img src={item.imgpath} alt="" />
-              </div>
-              <div className="item-content">
-                <h3>{item.projectTitle}</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Numquam, quidem.
-                </p>
-                <div className="icons">
-                  <div className="d-flex  align-items-center g-2 ">
-                    <a
-                      href=""
-                      className="icon-link text-decoration-none subtilite-color me-2 icon fs-6"
-                    ></a>
-                    <a
-                      href=""
-                      className="icon-github text-decoration-none subtilite-color icon fs-6"
-                    ></a>
-                  </div>
-                  <a
-                    href=""
-                    className=" text-decoration-none ms-auto d-flex align-items-center last-link "
-                  >
-                    more
-                    <span className="icon-arrow-right2 "></span>
-                  </a>
+        <AnimatePresence>
+          {arr.map((item) => {
+            return (
+              <motion.div
+                className="item text-center"
+                key={item.imgpath}
+                layout
+                initial={{ transform: "scale(0)" }}
+                animate={{ transform: "scale(1)" }}
+                transition={{type:"spring",damping:7,stiffness:40}}
+              >
+                <div>
+                  <img src={item.imgpath} alt="" />
                 </div>
-              </div>
-            </div>
-          );
-        })}
+                <div className="item-content">
+                  <h3>{item.projectTitle}</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Numquam, quidem.
+                  </p>
+                  <div className="icons">
+                    <div className="d-flex  align-items-center g-2 ">
+                      <a
+                        href=""
+                        className="icon-link text-decoration-none subtilite-color me-2 icon fs-6"
+                      ></a>
+                      <a
+                        href=""
+                        className="icon-github text-decoration-none subtilite-color icon fs-6"
+                      ></a>
+                    </div>
+                    <a
+                      href=""
+                      className=" text-decoration-none ms-auto d-flex align-items-center last-link "
+                    >
+                      more
+                      <span className="icon-arrow-right2 "></span>
+                    </a>
+                  </div>
+                </div>
+              </motion.div>
+            );
+          })}
+        </AnimatePresence>
       </div>
     </section>
   );

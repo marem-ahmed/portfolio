@@ -42,7 +42,7 @@ setIconTheme("icon-moon-o");
             <a href="../About/About.jsx">About</a>
           </li>
           <li>
-            <a href="">Skills</a>
+            <a href="../skills/skills.jsx">Skills</a>
           </li>
           <li>
             <a href="../main/main.jsx">Projects</a>
@@ -78,19 +78,17 @@ setIconTheme("icon-moon-o");
             </div>
 
             <li>
-              <a href="">About</a>
+              <a href="../About/About.jsx">About</a>
             </li>
             <li>
-              <a href="">Articles</a>
+              <a href="../skills/skills.jsx">Skills</a>
             </li>
             <li>
-              <a href="">Projects</a>
+              <a href="../main/main.jsx">Projects</a>
             </li>
+        
             <li>
-              <a href="">Speaking</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
+              <a href="../contact/contact.jsx">Contact</a>
             </li>
           </ul>
         </div>
