@@ -32,7 +32,7 @@ export default function hero() {
         <Lottie
           animationData={progammeranimation}
           style={{ height: 350 }}
-          className="my-auto"
+          className="my-auto animation"
         />
       </div>
     </section>
