@@ -144,7 +144,7 @@ button{
 }
 
 @media screen and (max-width:1000px) {
-    .container{
+    .continer{
         width: 80%;
         padding:0 1.5rem; 
 
@@ -152,8 +152,8 @@ button{
     }
 }
 @media screen and (max-width:600px) {
-    .container{
-        width: 85%;
+    .continer{
+        width: 100%;
         padding:0 1.5rem; 
 
 

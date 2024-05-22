@@ -12,6 +12,7 @@
 section .start-section {
   display: flex;  
   flex-direction: column;
+  margin: auto;
 
 
 }
@@ -70,4 +71,19 @@ font-size: 1.8rem;
     .animation{
         display: none;
     }
+   section .start-section .text-about{
+        text-align: center;
+        width: 95%;
+    }
+    section .start-section .avatar,
+    section .start-section .text-about,
+    section .start-section .icons {
+        margin: auto;
+    }
+    .icon-verified{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1rem;
+    }
+
 }
