@@ -1,0 +1,73 @@
+/* ========================
+ table of contents
+===========================
+ 
+1. About Section styles
+
+4.media Query of About Section
+ 
+*/
+/*====== start-side style=========*/
+
+section .start-section {
+  display: flex;  
+  flex-direction: column;
+
+
+}
+section .start-section .avatar{
+    width: 12.5rem;
+    height: 12.5rem;
+    border: 1px solid rgb(84, 82, 82);
+    border-radius: 50%;
+    padding: .5rem;
+    box-shadow: 3px 3px 50px rgb(138, 137, 137) inset;
+}
+section .start-section .avatar img{
+    width: 100%;
+    height: 100%;
+}
+section .start-section h1{
+    color: var(--title-color);
+}
+section .start-section p{
+    color: var(--subtitle-color);
+    margin-top: 1.2rem;
+    line-height: 1.5625rem;
+    font-size: 1.2rem;
+    
+}
+
+.icon-verified{
+    color: rgb(29, 113, 249);
+    font-size: 1.2rem;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    justify-self: end;
+   
+
+}
+section .start-section .icons {
+    color: var(--subtitle-color);
+    font-size: 1.6rem;
+    margin-top: 1.1rem;
+    gap: 3rem;
+}
+section .start-section .icons .icon{
+    transition: all 0.5s;
+    color: var(--light-hover);
+    cursor: pointer;
+
+
+}
+section .start-section .icons .icon:hover{
+font-size: 1.8rem;
+}
+
+
+/*====== End-side style(media query)=========*/
+@media screen and (max-width:700px) {
+    .animation{
+        display: none;
+    }
+}
