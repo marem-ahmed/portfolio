@@ -53,13 +53,7 @@ export default function main() {
       liveServer: "https://marem-ahmed.github.io/recipes/signup.html",
       sourceCode: "https://github.com/marem-ahmed/recipes",
     },
-    {
-      projectTitle: "Recipes",
-      category: ["html", "bootstrap", "js"],
-      imgpath: "/assets/recipes.png",
-      liveServer: "",
-      sourceCode: "https://github.com/marem-ahmed/_Resturant",
-    },
+
     {
       projectTitle: "note-app",
       category: ["React", "bootstrap"],
