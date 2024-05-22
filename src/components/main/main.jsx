@@ -5,53 +5,74 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function main() {
   const myProjects = [
     {
-      projectTitle: "Fokir",
+      projectTitle: "Mealfiy",
       category: ["html", "css"],
       imgpath: "/assets/fokir.png",
-      liveServer: "",
-      sourceCode: "",
+      liveServer: "https://marem-ahmed.github.io/_Resturant/",
+      sourceCode: "https://github.com/marem-ahmed/_Resturant",
     },
     {
       projectTitle: "DevFolio",
       category: ["html", "css", "Bootstrap"],
       imgpath: "/assets/Devfolio.png",
-      liveServer: "",
-      sourceCode: "",
+      liveServer: "https://marem-ahmed.github.io/DevFolio/",
+      sourceCode: "https://github.com/marem-ahmed/DevFolio",
     },
     {
       projectTitle: "Daniels",
       category: ["html", "css", "bootstrap"],
       imgpath: "/assets/daniels.png",
-      liveServer: "",
-      sourceCode: "",
+      liveServer: "https://marem-ahmed.github.io/Daniels/",
+      sourceCode: "https://github.com/marem-ahmed/Daniels",
     },
     {
       projectTitle: "Quotes",
       category: ["html", "bootstrap", "js"],
       imgpath: "/assets/quotes.png",
-      liveServer: "",
-      sourceCode: "",
+      liveServer: "https://marem-ahmed.github.io/Quotes/",
+      sourceCode: "https://github.com/marem-ahmed/Quotes",
     },
     {
       projectTitle: "BookMarker",
       category: ["html", "bootstrap", "js"],
       imgpath: "/assets/bookmarker.png",
-      liveServer: "",
-      sourceCode: "",
+      liveServer: "https://marem-ahmed.github.io/bookmarker/",
+      sourceCode: "https://github.com/marem-ahmed/bookmarker",
     },
     {
       projectTitle: "To DO List",
       category: ["html", "bootstrap", "js"],
       imgpath: "/assets/toDoList.png",
-      liveServer: "",
-      sourceCode: "",
+      liveServer: "https://marem-ahmed.github.io/crud-to-do-list/",
+      sourceCode: "https://github.com/marem-ahmed/crud-to-do-list",
+    },
+    {
+      projectTitle: "Recipes",
+      category: ["html", "bootstrap", "js"],
+      imgpath: "/assets/recipes.png",
+      liveServer: "https://marem-ahmed.github.io/recipes/signup.html",
+      sourceCode: "https://github.com/marem-ahmed/recipes",
     },
     {
       projectTitle: "Recipes",
       category: ["html", "bootstrap", "js"],
       imgpath: "/assets/recipes.png",
       liveServer: "",
-      sourceCode: "",
+      sourceCode: "https://github.com/marem-ahmed/_Resturant",
+    },
+    {
+      projectTitle: "note-app",
+      category: ["React", "bootstrap"],
+      imgpath: "/assets/app-note.png",
+      liveServer: "https://app-note-six.vercel.app/",
+      sourceCode: "https://github.com/marem-ahmed/app-note",
+    },
+    {
+      projectTitle: "E-commecre",
+      category: ["React", "bootstrap"],
+      imgpath: "/assets/E-commerce.png",
+      liveServer: "https://e-commerce-iota-teal.vercel.app/",
+      sourceCode: "https://github.com/marem-ahmed/-E-commerce",
     },
   ];
   const [activeBtn, setactiveBtn] = useState(false);
@@ -112,7 +133,7 @@ export default function main() {
         <button
           onClick={() => {
             setactiveBtn("React");
-            handelFilter("js");
+            handelFilter("React");
           }}
           className={activeBtn === "React" ? "active" : null}
         >
@@ -144,11 +165,11 @@ export default function main() {
                   <div className="icons">
                     <div className="d-flex  align-items-center g-2 ">
                       <a
-                        href=""
+                        href={item.liveServer}
                         className="icon-link text-decoration-none subtilite-color me-2 icon fs-6"
                       ></a>
                       <a
-                        href=""
+                        href={item.sourceCode}
                         className="icon-github text-decoration-none subtilite-color icon fs-6"
                       ></a>
                     </div>
