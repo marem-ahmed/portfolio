@@ -14,7 +14,7 @@ export default function hero() {
         </div>
         <span className="icon-verified"></span>
         <div className="text-about">
-          <h1>Front- developer</h1>
+          <h1>Front-End developer</h1>
           <p>
             I'm Mariam Ahmed, a Front-end developer, My collage is Computer
             <br />
