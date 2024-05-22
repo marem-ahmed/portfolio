@@ -8,7 +8,7 @@ export default function hero() {
       <div className="start-section ">
         <div className="avatar  ">
           <img
-            src="../../../public/assets/mariamAhmed.png"
+            src="/assets/mariamAhmed.png"
             alt="Mariam"
           />
         </div>
