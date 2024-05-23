@@ -88,22 +88,15 @@ border-radius: 7px;
     margin-bottom: 1rem;
     color: var(--subtitle-color);
 }
-.main .end-side .item .item-content .icons{
-gap: 0.5rem;
-display: flex;
-}
-.main .end-side .item .item-content .icons .last-link  {
-    color: var(--main-color);
-    border-bottom: 1px solid var(--main-color);
-}
-.main .end-side .item .item-content .icons .icon:hover  {
-font-size: 18px;
+.main .end-side .item .item-content .icons .icon  {
+    font-size: 20px;
 
 }
-.main .end-side .item .item-content .icons .icon-arrow-right2 {
-    margin-left: 5px;
-    border-bottom: none;
+.main .end-side .item .item-content .icons .icon:hover  {
+font-size: 22px;
+
 }
+
 
 /*=======Media Query ======== */
 

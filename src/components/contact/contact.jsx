@@ -12,7 +12,7 @@ export default function contact() {
   return (
     <section className="ContactUs flex justify-content-between ">
       <div className="start-side">
-        <div className="title flex">
+        <div className="title flex ">
           <span className="icon-envelope-o"></span>
           <h2 className="">Contact Us</h2>
         </div>
@@ -23,7 +23,7 @@ export default function contact() {
         <form className="" onSubmit={handleSubmit}>
           <div className="flex">
             <label htmlFor="email">Email Address:</label>
-            <input autoComplete="off" type="email" id="email" name="email" />
+            <input autoComplete="off" type="email" id="email" name="email" placeholder='Email..' />
             <ValidationError
               prefix="Email"
               field="email"
@@ -32,7 +32,7 @@ export default function contact() {
           </div>
           <div className="flex">
             <label htmlFor="message">Your message:</label>
-            <textarea id="message" name="message"></textarea>
+            <textarea id="message" name="message" placeholder='Message..'></textarea>
             <ValidationError
               prefix="Message"
               field="message"

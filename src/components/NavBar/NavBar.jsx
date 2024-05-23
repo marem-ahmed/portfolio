@@ -39,16 +39,16 @@ setIconTheme("icon-moon-o");
       <nav>
         <ul className="flex ">
           <li>
-            <a href="../About/About.jsx">About</a>
+            <a href="/About/About.jsx">About</a>
           </li>
           <li>
-            <a href="../skills/skills.jsx">Skills</a>
+            <a href="/skills/skills.jsx">Skills</a>
           </li>
           <li>
-            <a href="../main/main.jsx">Projects</a>
+            <a href="/main/main.jsx">Projects</a>
           </li>
           <li>
-            <a href="../contact/contact.jsx">Contact</a>
+            <a href="/contact/contact.jsx">Contact</a>
           </li>
         </ul>
       </nav>
@@ -78,17 +78,17 @@ setIconTheme("icon-moon-o");
             </div>
 
             <li>
-              <a href="../About/About.jsx">About</a>
+              <a href="/About/About.jsx">About</a>
             </li>
             <li>
-              <a href="../skills/skills.jsx">Skills</a>
+              <a href="/skills/skills.jsx">Skills</a>
             </li>
             <li>
-              <a href="../main/main.jsx">Projects</a>
+              <a href="/main/main.jsx">Projects</a>
             </li>
         
             <li>
-              <a href="../contact/contact.jsx">Contact</a>
+              <a href="/contact/contact.jsx">Contact</a>
             </li>
           </ul>
         </div>
