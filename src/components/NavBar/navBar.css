@@ -149,4 +149,12 @@ ul.model a{
  header .menu{
     display: block;
 }
+ul.model{
+    width: 98%;
+    border-radius: 0;
+}
+ul.model li{
+padding-left: 1rem;
+
+}
 }

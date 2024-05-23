@@ -64,7 +64,7 @@ export default function main() {
     {
       projectTitle: "E-commecre",
       category: ["React", "bootstrap"],
-      imgpath: "/assets/E-commerce.png",
+      imgpath: "/assets/e-commerce.png",
       liveServer: "https://e-commerce-iota-teal.vercel.app/",
       sourceCode: "https://github.com/marem-ahmed/-E-commerce",
     },
@@ -140,12 +140,12 @@ export default function main() {
           {arr.map((item) => {
             return (
               <motion.div
-                className="item text-center"
+                className="item "
                 key={item.imgpath}
                 layout
                 initial={{ transform: "scale(0)" }}
                 animate={{ transform: "scale(1)" }}
-                transition={{type:"spring",damping:7,stiffness:40}}
+                transition={{ type: "spring", damping: 7, stiffness: 40 }}
               >
                 <div>
                   <img src={item.imgpath} alt="" />
@@ -156,24 +156,17 @@ export default function main() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Numquam, quidem.
                   </p>
-                  <div className="icons">
-                    <div className="d-flex  align-items-center g-2 ">
-                      <a
-                        href={item.liveServer}
-                        className="icon-link text-decoration-none subtilite-color me-2 icon fs-6"
-                      ></a>
-                      <a
-                        href={item.sourceCode}
-                        className="icon-github text-decoration-none subtilite-color icon fs-6"
-                      ></a>
-                    </div>
+                  <div className=" icons d-flex  align-items-center g-2 ">
                     <a
-                      href=""
-                      className=" text-decoration-none ms-auto d-flex align-items-center last-link "
-                    >
-                      more
-                      <span className="icon-arrow-right2 "></span>
-                    </a>
+                      href={item.liveServer}
+                      className="icon-link text-decoration-none subtilite-color me-2 icon "
+                      target="_blank"
+                    ></a>
+                    <a
+                      href={item.sourceCode}
+                      className="icon-github text-decoration-none subtilite-color icon "
+                      target="_blank"
+                    ></a>
                   </div>
                 </div>
               </motion.div>
