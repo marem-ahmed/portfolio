@@ -86,7 +86,6 @@ setIconTheme("icon-moon-o");
             <li>
               <a href="/main/main.jsx">Projects</a>
             </li>
-        
             <li>
               <a href="/contact/contact.jsx">Contact</a>
             </li>

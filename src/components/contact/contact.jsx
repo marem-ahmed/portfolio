@@ -22,7 +22,7 @@ export default function contact() {
         </p>
         <form className="" onSubmit={handleSubmit}>
           <div className="flex">
-            <label htmlFor="email">Email Address:</label>
+            <label htmlFor="email" className='pe-2'>Email Address:</label>
             <input autoComplete="off" type="email" id="email" name="email" placeholder='Email..' />
             <ValidationError
               prefix="Email"
@@ -31,7 +31,7 @@ export default function contact() {
             />
           </div>
           <div className="flex">
-            <label htmlFor="message">Your message:</label>
+            <label htmlFor="message" className='pe-2'>Your message:</label>
             <textarea id="message" name="message" placeholder='Message..'></textarea>
             <ValidationError
               prefix="Message"

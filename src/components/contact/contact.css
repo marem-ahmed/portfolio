@@ -93,12 +93,11 @@ margin-top: 1rem;
     }
   
     .ContactUs form button{
-        margin: auto;
         display: flex;
     }
     .ContactUs form #email,
     .ContactUs form #message{
         margin-top: 0.5rem;
-        width: 90%;
+        width: 100%;
     }
 }
