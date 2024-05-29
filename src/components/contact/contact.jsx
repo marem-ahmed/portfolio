@@ -10,7 +10,7 @@ export default function contact() {
   const [state, handleSubmit] = useForm("xoqgboor");
   
   return (
-    <section className="ContactUs flex justify-content-between ">
+    <section className="ContactUs flex justify-content-between " id="contact">
       <div className="start-side">
         <div className="title flex ">
           <span className="icon-envelope-o"></span>

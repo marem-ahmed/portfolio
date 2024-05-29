@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import './navBar.css'
+import { Link } from "react-router-dom";
 export default function navBar() {
    const [showModel,setshowModel]= useState(false)
    const [theme, setTheme] = useState(localStorage.getItem("currentTheme")??"dark");
-   const [iconTheme, setIconTheme] = useState("icon-sun");
+   const [iconTheme, setIconTheme] = useState([]);
 
 
 
@@ -11,12 +12,12 @@ useEffect(()=>{
   if (theme === "light") {
     document.body.classList.add("light");
     document.body.classList.remove("dark");
-    setIconTheme("icon-sun");
+    setIconTheme("icon-moon-o");
    
   }else{
 document.body.classList.add("dark");
 document.body.classList.remove("light");
-setIconTheme("icon-moon-o");
+setIconTheme("icon-sun");
   }
   
 
@@ -39,16 +40,16 @@ setIconTheme("icon-moon-o");
       <nav>
         <ul className="flex ">
           <li>
-            <a href="/About/About.jsx">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="/skills/skills.jsx">Skills</a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="/main/main.jsx">Projects</a>
+            <a href="#main">Projects</a>
           </li>
           <li>
-            <a href="/contact/contact.jsx">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -78,16 +79,16 @@ setIconTheme("icon-moon-o");
             </div>
 
             <li>
-              <a href="/About/About.jsx">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="/skills/skills.jsx">Skills</a>
+              <a href="#skills">Skills</a>
             </li>
             <li>
-              <a href="/main/main.jsx">Projects</a>
+              <a href="#main">Projects</a>
             </li>
             <li>
-              <a href="/contact/contact.jsx">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
