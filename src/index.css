@@ -50,6 +50,7 @@ html{
   box-sizing: inherit;
   scroll-behavior: smooth;
   scrollbar-color: var(--primary-color);
+  scroll-padding-top: 2rem;
 
   
 }

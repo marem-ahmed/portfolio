@@ -83,7 +83,7 @@ export default function main() {
             setArr(newArr);
   }
   return (
-    <section className="main ">
+    <section className="main " id="main">
       <div className="start-side ">
         <button
           onClick={() => {

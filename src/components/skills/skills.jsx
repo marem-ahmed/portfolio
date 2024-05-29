@@ -2,7 +2,7 @@ import React from 'react'
 import '../skills/skills.css'
 export default function skills() {
   return (
-    <div className="skills row subtilite-color d-flex flex-wrap justify-content-center">
+    <div className="skills row subtilite-color d-flex flex-wrap justify-content-center " id="skills">
       <div className=" skill  col-md-3 col-5 text-center py-3 ">
         <i className="fa-brands fa-html5 fs-2"></i>
         <h3>HTML</h3>

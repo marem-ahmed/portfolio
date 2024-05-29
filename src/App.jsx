@@ -6,7 +6,6 @@ import Main from './components/main/main';
 import Contact from './components/contact/contact';
 import Footer from './components/Footer/Footer';
 import '@fortawesome/fontawesome-free'
-
 function App() {
   useEffect(() => {
         window.addEventListener("scroll", () => {

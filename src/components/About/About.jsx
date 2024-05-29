@@ -4,7 +4,7 @@ import Lottie from "lottie-react";
 import progammeranimation from '../../../public/animations/programmer.json'
 export default function hero() {
   return (
-    <section className="flex justify-content-between ">
+    <section className="flex justify-content-between " id="about">
       <div className="start-section ">
         <div className="avatar  ">
           <img
