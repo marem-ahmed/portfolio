@@ -68,6 +68,13 @@ export default function main() {
       liveServer: "https://e-commerce-iota-teal.vercel.app/",
       sourceCode: "https://github.com/marem-ahmed/-E-commerce",
     },
+    {
+      projectTitle: "Games",
+      category: ["css", "bootstrap", "js"],
+      imgpath: "/assets/gamesWbsite.png",
+      liveServer: "https://marem-ahmed.github.io/GameWebsite-OOP-/",
+      sourceCode: "https://github.com/marem-ahmed/GameWebsite-OOP-",
+    },
   ];
   const [activeBtn, setactiveBtn] = useState(false);
   const [arr, setArr] = useState(myProjects);
