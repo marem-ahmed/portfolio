@@ -47,6 +47,13 @@ export default function main() {
       sourceCode: "https://github.com/marem-ahmed/crud-to-do-list",
     },
     {
+      projectTitle: "weather",
+      category: ["html", "bootstrap", "js"],
+      imgpath: "/assets/weather.png",
+      liveServer: "https://marem-ahmed.github.io/weather",
+      sourceCode: "https://github.com/marem-ahmed/weather",
+    },
+    {
       projectTitle: "Recipes",
       category: ["html", "bootstrap", "js"],
       imgpath: "/assets/recipes.png",
