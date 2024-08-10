@@ -60,7 +60,13 @@ export default function main() {
       liveServer: "https://marem-ahmed.github.io/recipes/signup.html",
       sourceCode: "https://github.com/marem-ahmed/recipes",
     },
-
+    {
+      projectTitle: "Games",
+      category: ["html", "bootstrap", "js"],
+      imgpath: "/assets/gamesWbsite (1).png",
+      liveServer: "https://marem-ahmed.github.io/GameWebsite-OOP-/",
+      sourceCode: "https://github.com/marem-ahmed/GameWebsite-OOP-",
+    },
     {
       projectTitle: "note-app",
       category: ["React", "bootstrap"],
