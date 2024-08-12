@@ -47,11 +47,32 @@ export default function main() {
       sourceCode: "https://github.com/marem-ahmed/crud-to-do-list",
     },
     {
+      projectTitle: "weather",
+      category: ["html", "bootstrap", "js"],
+      imgpath: "/assets/weather.png",
+      liveServer: "https://marem-ahmed.github.io/weather",
+      sourceCode: "https://github.com/marem-ahmed/weather",
+    },
+    {
       projectTitle: "Recipes",
       category: ["html", "bootstrap", "js"],
       imgpath: "/assets/recipes.png",
       liveServer: "https://marem-ahmed.github.io/recipes/signup.html",
       sourceCode: "https://github.com/marem-ahmed/recipes",
+    },
+    {
+      projectTitle: "Games",
+      category: ["html", "bootstrap", "js"],
+      imgpath: "/assets/gamesWbsite (1).png",
+      liveServer: "https://marem-ahmed.github.io/GameWebsite-OOP-/",
+      sourceCode: "https://github.com/marem-ahmed/GameWebsite-OOP-",
+    },
+    {
+      projectTitle: "eventProject",
+      category: ["html", "bootstrap", "jQuery"],
+      imgpath: "/assets/Jquery.png",
+      liveServer: "https://marem-ahmed.github.io/Jquery/",
+      sourceCode: "https://github.com/marem-ahmed/Jquery",
     },
 
     {
@@ -123,6 +144,15 @@ export default function main() {
           className={activeBtn === "bootstrap" ? "active" : null}
         >
           Bootstrap
+        </button>
+        <button
+          onClick={() => {
+            setactiveBtn("jQuery");
+            handelFilter("jQuery");
+          }}
+          className={activeBtn === "jQuery" ? "active" : null}
+        >
+          JQuery
         </button>
         <button
           onClick={() => {
