@@ -70,7 +70,7 @@ export default function main() {
     {
       projectTitle: "eventProject",
       category: ["html", "bootstrap", "jQuery"],
-      imgpath: "/assets/Jquery.png",
+      imgpath: "/assets/query.png",
       liveServer: "https://marem-ahmed.github.io/Jquery/",
       sourceCode: "https://github.com/marem-ahmed/Jquery",
     },
