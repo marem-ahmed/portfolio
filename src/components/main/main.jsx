@@ -64,7 +64,7 @@ export default function main() {
     {
       projectTitle: "E-commecre",
       category: ["React", "bootstrap"],
-      imgpath: "/assets/e-commerce.png",
+      imgpath: "/assets/Ecommerce.png",
       liveServer: "https://e-commerce-iota-teal.vercel.app/",
       sourceCode: "https://github.com/marem-ahmed/-E-commerce",
     },
